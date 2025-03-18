@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('members.urls')),  # Ensure you're importing the 'urls' module from the 'members' app
+    path('accounts', include('accounts.urls')),  # Ensure you're importing the 'urls' module from the 'members' app
 ]
